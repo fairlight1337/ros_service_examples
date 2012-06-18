@@ -14,29 +14,29 @@ which serves album names and included title names to other
 ROS nodes on the network.
 
 
-    The service server node
-    =======================
+The service server node
+=======================
 
-    The service node is written in C++. It sends the filenames
-    from within the "albums" folder when requested. When a
-    client node requests a specific album, the server sends a
-    list of all filenames included in this album's folder.
-    A custom message type "MP3InventoryService" is used for
-    this example.
+The service node is written in C++. It sends the filenames
+from within the "albums" folder when requested. When a
+client node requests a specific album, the server sends a
+list of all filenames included in this album's folder.
+A custom message type "MP3InventoryService" is used for
+this example.
 
 
-    The client nodes
-    ================
+The client nodes
+================
 
-    Client node source code is given in three programming languages:
+Client node source code is given in three programming languages:
 
-           o C++
-           o Python
-           o LISP
+       * C++
+       * Python
+       * LISP
 
-    All three client nodes are looking for the service
-    "mp3_inventory_interaction" on the ROS core and send their
-    requests to the server node once found.
+All three client nodes are looking for the service
+"mp3_inventory_interaction" on the ROS core and send their
+requests to the server node once found.
 
 
 Execution
