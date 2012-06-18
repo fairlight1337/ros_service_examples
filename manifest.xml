@@ -1,0 +1,18 @@
+<package>
+  <description brief="rosdemo_mp3">
+
+     rosdemo_mp3
+
+  </description>
+  <author>Jan Winkler</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rosdemo_mp3</url>
+
+  <depend package="roscpp"/>
+  <depend package="rospy"/>
+  <depend package="roslisp"/>
+
+</package>
+
+

@@ -1,0 +1,5 @@
+string request_string
+string album
+---
+string response_string
+string[] list_strings
