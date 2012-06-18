@@ -55,10 +55,12 @@ The C++ and Python client nodes can also be started using rosrun.
 There is no need to "roscd" to any specific directory first.
 
    Python:
-    > rosrun rosdemo_mp3 mp3_controller_python.py
+
+   > rosrun rosdemo_mp3 mp3_controller_python.py
 
    C++:
-    > rosrun rosdemo_mp3 mp3_controller
+
+   > rosrun rosdemo_mp3 mp3_controller
 
 To launch the LISP client, be sure to completely set up your Emacs,
 LISP and roslisp environment first. After that, you can run the LISP
