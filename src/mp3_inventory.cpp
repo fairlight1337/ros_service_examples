@@ -1,7 +1,7 @@
 /*********************************************************************
  * Software License Agreement (BSD License)
  *
- *  Copyright (c) 2013, Institute for Artificial Intelligence,
+ *  Copyright (c) 2015, Jan Winkler, Institute for Artificial Intelligence,
  *  Universität Bremen.
  *  All rights reserved.
  *
