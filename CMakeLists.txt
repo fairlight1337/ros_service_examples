@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(ros_service_examples)
 
-find_package(catkin REQUIRED COMPONENTS roscpp message_generation)
+find_package(catkin REQUIRED COMPONENTS roscpp roslib message_generation)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O2")
 
@@ -11,7 +11,7 @@ add_service_files(FILES
 generate_messages()
 
 catkin_package(
-  CATKIN_DEPENDS roscpp message_runtime)
+  CATKIN_DEPENDS roscpp roslib message_runtime)
 
 add_executable(mp3_inventory src/mp3_inventory.cpp)
 add_executable(mp3_controller src/mp3_controller.cpp)

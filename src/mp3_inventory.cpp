@@ -47,6 +47,7 @@
 
 // ROS
 #include <ros/ros.h>
+#include <ros/package.h>
 
 // Local
 #include <ros_service_examples/MP3InventoryService.h>
@@ -54,15 +55,15 @@
 
 bool mp3_inventory_interaction(ros_service_examples::MP3InventoryService::Request &req,
                                ros_service_examples::MP3InventoryService::Response &res) {
-  std::string strDirectory = "albums";
+  std::string strDirectory = ros::package::getPath("ros_service_examples") + "/albums";
   ROS_INFO("request string: %s", req.request_string.c_str());
   
   if(std::strcmp(req.request_string.c_str(), "album_list") == 0) {
     std::string str_temp;
     std::stringstream sts;
     
-    DIR *dp;
-    struct dirent *dirp;
+    DIR* dp;
+    struct dirent* dirp;
     if((dp = opendir(strDirectory.c_str())) != NULL) {
       while((dirp = readdir(dp)) != NULL) {
 	std::string strTempFilename = std::string(dirp->d_name);
@@ -85,7 +86,7 @@ bool mp3_inventory_interaction(ros_service_examples::MP3InventoryService::Reques
     std::string str_temp;
     std::stringstream sts;
     
-    DIR *dp;
+    DIR* dp;
     struct dirent *dirp;
     if((dp = opendir(strAlbumDirectory.c_str())) != NULL) {
       while((dirp = readdir(dp)) != NULL) {
