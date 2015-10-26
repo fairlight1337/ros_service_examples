@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<package>
+  
+  <name>ros_service_examples</name>
+  <version>0.7.3</version>
+  <description>Semantic Hierarchy Recorder system allowing detailed execution time logging of autonomously performed robot plans on cognitive agents</description>
+  
+  <maintainer email="winkler@cs.uni-bremen.de">Jan Winkler</maintainer>
+  
+  <license>BSD</license>
+  
+  <author email="winkler@cs.uni-bremen.de">Jan Winkler</author>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>roscpp</build_depend>
+  <build_depend>message_generation</build_depend>
+  
+  <run_depend>message_runtime</run_depend>
+  <run_depend>roscpp</run_depend>
+
+</package>
