@@ -1,13 +1,13 @@
 <package>
-  <description brief="rosdemo_mp3">
+  <description brief="ros_service_examples">
 
-     rosdemo_mp3
+     ros_service_examples
 
   </description>
   <author>Jan Winkler</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/rosdemo_mp3</url>
+  <url>http://ros.org/wiki/ros_service_examples</url>
 
   <depend package="roscpp"/>
   <depend package="rospy"/>

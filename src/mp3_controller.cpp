@@ -1,6 +1,6 @@
 #include <iostream>
 #include "ros/ros.h"
-#include "rosdemo_mp3/MP3InventoryService.h"
+#include "ros_service_examples/MP3InventoryService.h"
 
 using namespace std;
 
@@ -9,9 +9,9 @@ int main(int argc, char **argv) {
   ros::init(argc, argv, "mp3_inventory_client");
   
   ros::NodeHandle n;
-  ros::ServiceClient client = n.serviceClient<rosdemo_mp3::MP3InventoryService>("mp3_inventory_interaction");
+  ros::ServiceClient client = n.serviceClient<ros_service_examples::MP3InventoryService>("mp3_inventory_interaction");
   
-  rosdemo_mp3::MP3InventoryService srv;
+  ros_service_examples::MP3InventoryService srv;
 
   std::stringstream ss;
   ss << "album_list";
@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
         // Call server for information about this album (i.e. titles).
         std::stringstream ss;
         ss << "title_list";
-        rosdemo_mp3::MP3InventoryService srv_titles;
+        ros_service_examples::MP3InventoryService srv_titles;
         srv_titles.request.request_string = ss.str();
         ss.str("");
         ss << (*itStrings).c_str();

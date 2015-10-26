@@ -1,5 +1,5 @@
 (defsystem mp3-controller
-  :depends-on (cram-language roslisp rosdemo_mp3-srv)
+  :depends-on (cram-language roslisp ros_service_examples-srv)
   :components
   ((:module "src"
             :components

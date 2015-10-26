@@ -5,13 +5,13 @@
 #include <errno.h>
 #include <vector>
 #include "ros/ros.h"
-#include "rosdemo_mp3/MP3InventoryService.h"
+#include "ros_service_examples/MP3InventoryService.h"
 
 using namespace std;
 
 
-bool mp3_inventory_interaction(rosdemo_mp3::MP3InventoryService::Request &req,
-                               rosdemo_mp3::MP3InventoryService::Response &res) {
+bool mp3_inventory_interaction(ros_service_examples::MP3InventoryService::Request &req,
+                               ros_service_examples::MP3InventoryService::Response &res) {
   string strDirectory = "albums";
   ROS_INFO("request string: %s", req.request_string.c_str());
 

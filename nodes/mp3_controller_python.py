@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 import roslib
-roslib.load_manifest('rosdemo_mp3')
+roslib.load_manifest('ros_service_examples')
 
 import sys
 
-from rosdemo_mp3.srv import *
+from ros_service_examples.srv import *
 import rospy
 
 

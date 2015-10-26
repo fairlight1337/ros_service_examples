@@ -7,14 +7,14 @@
         (with-fields (;;(response-string response_string)
                       (album-list list_strings))
             (call-service "mp3_inventory_interaction"
-                          "rosdemo_mp3/MP3InventoryService"
+                          "ros_service_examples/MP3InventoryService"
                           :request_string "album_list")
           (loop for album across album-list do
             (format t "album: ~a~%" album)
             (format t " - titles:~%")
             (with-fields ((title-list list_strings))
                 (call-service "mp3_inventory_interaction"
-                              "rosdemo_mp3/MP3InventoryService"
+                              "ros_service_examples/MP3InventoryService"
                               :request_string "title_list"
                               :album album)
               (loop for title across title-list do

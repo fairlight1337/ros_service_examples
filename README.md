@@ -45,8 +45,8 @@ Execution
 To start the example environment, do the following (assuming, you
 have a working ROS core running):
 
-     > roscd rosdemo_mp3
-     > rosrun rosdemo_mp3 mp3_inventory
+     > roscd ros_service_examples
+     > rosrun ros_service_examples mp3_inventory
 
 The first line is important because the inventory server looks for
 the directory "albums" in its current working directory.
@@ -56,17 +56,17 @@ There is no need to "roscd" to any specific directory first.
 
    Python:
 
-   > rosrun rosdemo_mp3 mp3_controller_python.py
+   > rosrun ros_service_examples mp3_controller_python.py
 
    C++:
 
-   > rosrun rosdemo_mp3 mp3_controller
+   > rosrun ros_service_examples mp3_controller
 
 To launch the LISP client, be sure to completely set up your Emacs,
 LISP and roslisp environment first. After that, you can run the LISP
 client node through SLIME:
 
-    > (ros-load:load-system "rosdemo_mp3" :mp3-controller)
+    > (ros-load:load-system "ros_service_examples" :mp3-controller)
 
 
 Purpose of this example
