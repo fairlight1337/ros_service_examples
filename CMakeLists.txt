@@ -12,7 +12,8 @@ generate_messages()
 
 catkin_package(
   CATKIN_DEPENDS roscpp roslib message_runtime)
-
+  
+include_directories(${catkin_INCLUDE_DIRS})
 add_executable(mp3_inventory src/mp3_inventory.cpp)
 add_executable(mp3_controller src/mp3_controller.cpp)
 
