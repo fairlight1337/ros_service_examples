@@ -14,11 +14,11 @@ catkin_package(
   CATKIN_DEPENDS roscpp roslib message_runtime)
   
 include_directories(${catkin_INCLUDE_DIRS})
+
 add_executable(mp3_inventory src/mp3_inventory.cpp)
+target_link_libraries(mp3_inventory ${catkin_LIBRARIES})
+add_dependencies(mp3_inventory ros_service_examples_gencpp)
+
 add_executable(mp3_controller src/mp3_controller.cpp)
-
-target_link_libraries(mp3_inventory
-  ${catkin_LIBRARIES})
-
-target_link_libraries(mp3_controller
-  ${catkin_LIBRARIES})
+target_link_libraries(mp3_controller ${catkin_LIBRARIES})
+add_dependencies(mp3_controller ros_service_examples_gencpp)
